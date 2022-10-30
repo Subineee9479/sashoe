@@ -1,15 +1,11 @@
-
-import {useUserState} from 'react';
+import { Link } from "react-router-dom";
 
 const MyPage = () => {
-    const { user } = useUserState();
     return (
-        <>
-        <p>Mypage</p>
         <div>
-            
+            <h1>Mypage</h1>
+            <Link to="/Home">홈</Link>
         </div>
-        </>
     );
 }
 export default MyPage;
